@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CQ Product Admin</label>
+
+    <!-- Field Level Access -->
+    <fieldPermissions>
+        <field>SQX_Part__c.SQX_Part_Number__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>SQX_Part__c.SQX_Active__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>SQX_Part__c.SQX_Product__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+
+    <!-- Object Access -->
+    <objectPermissions>
+        <object>SQX_Part__c</object>
+        <allowCreate>true</allowCreate>
+        <allowRead>true</allowRead>
+        <allowEdit>true</allowEdit>
+        <allowDelete>false</allowDelete>
+        <modifyAllRecords>false</modifyAllRecords>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <object>Product2</object>
+        <allowCreate>true</allowCreate>
+        <allowRead>true</allowRead>
+        <allowEdit>true</allowEdit>
+        <allowDelete>false</allowDelete>
+        <modifyAllRecords>false</modifyAllRecords>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+
+    <!-- System permissions -->
+    <userPermissions>
+        <name>ManageCustomPermissions</name>
+        <enabled>true</enabled>
+    </userPermissions>
+    <userPermissions>
+        <name>ViewRoles</name>
+        <enabled>true</enabled>
+    </userPermissions>
+    <userPermissions>
+        <name>ViewSetup</name>
+        <enabled>true</enabled>
+    </userPermissions>
+    <userPermissions>
+        <name>CustomizeApplication</name>
+        <enabled>true</enabled>
+    </userPermissions>
+</PermissionSet>
