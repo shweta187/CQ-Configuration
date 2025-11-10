@@ -6,7 +6,7 @@ public with sharing class SQXUtility {
      * @param operationType          Type of access to validate: 'Create', 'Update', 'Query', or 'Upsert'
      * @return Boolean               TRUE if ALL fields pass FLS checks; FALSE if any fail.
      */
-    public static Boolean checkFieldAccess(String objectApiName, String fieldsCsv, String operationType) {
+  /*  public static Boolean checkFieldAccess(String objectApiName, String fieldsCsv, String operationType) {
         Boolean hasAccess = true;
         try {
             SObjectType objectType = Schema.getGlobalDescribe().get(objectApiName);
@@ -40,5 +40,5 @@ public with sharing class SQXUtility {
         }
 
         return hasAccess;
-    }
+    }*/
 }
